@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Temukan ikan hias pilihan, pakan, dan perlengkapan akuarium di LautKecil.">
+  <title>LautKecil — Temukan teman bersiripmu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="LautKecil, beranda"><span class="brand-mark">≈</span><span>Laut<span class="brand-light">Kecil</span></span></a>
+    <nav class="main-nav" aria-label="Navigasi utama"><a href="#koleksi">Koleksi</a><a href="#keunggulan">Keunggulan</a><a href="#panduan">Panduan Perawatan</a><a href="#testimoni">Testimoni</a></nav>
+    <button class="cart-button" id="openCart" aria-label="Buka keranjang">Keranjang <span id="cartCount">0</span></button>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy"><span class="eyebrow"><i></i> TEMAN BARU, DUNIA BARU</span><h1>Hadirkan warna<br>di <em>dalam rumah.</em></h1><p>Ikan hias sehat pilihan, dirawat dengan penuh perhatian dan dikirim dengan aman sampai ke rumahmu.</p><a class="button button-dark" href="#koleksi">Jelajahi koleksi <span>↗</span></a><div class="hero-note"><span class="avatar-stack"><b>🐠</b><b>🐟</b><b>🫧</b></span><span>Dipercaya pecinta ikan<br><strong>di seluruh Indonesia</strong></span></div></div>
+      <div class="hero-visual"><div class="sun-glow"></div><img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=1100&q=85" alt="Ikan hias berwarna berenang di akuarium"><div class="image-caption"><span>KOLEKSI PILIHAN</span><strong>Little wonders, big joy.</strong></div><span class="hero-sticker">✳<small>carefully<br>selected</small></span></div>
+    </section>
+    <section class="trust-row">
+      <span>🌿 Karantina 14 Hari Bebas Parasit</span>
+      <span>✳</span>
+      <span>📦 Garansi Hidup (D.O.A) 100%</span>
+      <span>✳</span>
+      <span>🚚 Pengiriman Beroksigen Medis</span>
+      <span>✳</span>
+      <span>💬 Konsultasi Aquarist Gratis</span>
+    </section>
+
+    <section class="collection section-wrap" id="koleksi">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PILIHAN UNTUKMU</span>
+          <h2>Temukan si kecil favoritmu.</h2>
+        </div>
+        <a class="text-link" href="#koleksi">Koleksi Ikan Segar <span>→</span></a>
+      </div>
+      <div class="shop-controls">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Cari nama ikan, kategori, corak..." aria-label="Cari produk">
+        </label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Semua">Semua</button>
+          <button class="filter" data-category="Ikan Cupang">Cupang</button>
+          <button class="filter" data-category="Ikan Guppy">Guppy</button>
+          <button class="filter" data-category="Ikan Mas Koki">Mas koki</button>
+          <button class="filter" data-category="Ikan Hias">Ikan hias</button>
+        </div>
+        <select id="sortSelect" aria-label="Urutkan produk">
+          <option value="featured">Pilihan kami</option>
+          <option value="low">Harga terendah</option>
+          <option value="high">Harga tertinggi</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite">
+        <div class="loading-state">Menyiapkan penghuni baru untukmu…</div>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>Belum ada ikan yang cocok. Coba kata kunci lain, ya.</div>
+    </section>
+
+    <!-- Section Keunggulan -->
+    <section class="section-wrap" id="keunggulan">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">STANDAR KUALITAS LAUTKECIL</span>
+          <h2>Mengapa Berbelanja di LautKecil?</h2>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.7;">Setiap ikan dirawat dengan standar budidaya tinggi untuk memastikan tiba dengan sehat dan siap mewarnai akuariummu.</p>
+        </div>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>Karantina Ketat 14 Hari</h3>
+          <p>Semua ikan melalui masa observasi dan karantina ketat untuk memastikan bebas jamur, kutu, dan parasit sebelum dikirim.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Kemasan Standar Oksigen</h3>
+          <p>Dikemas dengan kantong plastik ganda bertekanan oksigen murni dan dilapisi box styrofoam khusus tahan guncangan dan isolasi suhu.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Garansi Hidup (D.O.A) 100%</h3>
+          <p>Jika ikan mengalami kendala selama perjalanan, kami siap memberikan ikan pengganti atau pengembalian dana penuh tanpa syarat rumit.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Bimbingan Aquarist Gratis</h3>
+          <p>Bingung soal setup tank atau pakan? Tim ahli aquarist kami siap memandu Anda secara personal kapan pun dibutuhkan.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section Panduan Aklimatisasi -->
+    <section class="section-wrap" id="panduan" style="background:#f4f6ee;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PANDUAN PEMULA & PENGHOBI</span>
+          <h2>Aklimatisasi: Sambut Teman Kecilmu</h2>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.7;">Ikuti 4 langkah mudah ini agar ikan baru cepat beradaptasi dan tidak stres dengan air akuariummu.</p>
+        </div>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-num">LANGKAH 01</span>
+          <h3>Penyetaraan Suhu</h3>
+          <p>Apungkan kantong plastik berisi ikan di atas air akuarium selama 15–20 menit hingga suhu air kantong dan akuarium seimbang.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">LANGKAH 02</span>
+          <h3>Campur Air Bertahap</h3>
+          <p>Buka kantong perlahan, lalu tambahkan 1–2 gelas air akuarium ke dalam kantong setiap 5 menit untuk menyamakan pH air.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">LANGKAH 03</span>
+          <h3>Lepas dengan Lembut</h3>
+          <p>Gunakan serokan halus untuk memindahkan ikan ke akuarium. Hindari memasukkan air sisa bawaan kantong ke akuarium.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">LANGKAH 04</span>
+          <h3>Puasakan 24 Jam</h3>
+          <p>Redupkan lampu akuarium beberapa jam dan jangan langsung memberi makan di hari pertama agar ikan tidak kembung karena stres.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section Testimoni -->
+    <section class="section-wrap" id="testimoni">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ULASAN PELANGGAN</span>
+          <h2>Dipercaya Pecinta Ikan Nusantara</h2>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.7;">Pengalaman nyata dari para penghobi yang telah melengkapi akuarium mereka bersama LautKecil.</p>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">"Cupang koi galaxy warnanya cerah banget, sirip utuh tidak ada cacat. Pengiriman ke Surabaya cuma sehari dan ikannya langsung aktif berenang begitu masuk tank!"</p>
+          <div class="review-author">
+            <div class="review-avatar">DA</div>
+            <div><strong>Dimas Anggara</strong><span>Surabaya, Jawa Timur</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">"Packingnya luar biasa rapi! Pakai box styrofoam tebal dan oksigennya masih kencang banget. Mas koki ranchu saya sehat, gemoy, dan makannya lahap."</p>
+          <div class="review-author">
+            <div class="review-avatar">SN</div>
+            <div><strong>Siti Nurhaliza</strong><span>Bandung, Jawa Barat</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">"Sebagai pemula aquascape, saya sangat terbantu dengan panduan perawatannya. Tanya-tanya ke tim LautKecil langsung dibalas dengan detail dan ramah."</p>
+          <div class="review-author">
+            <div class="review-avatar">BW</div>
+            <div><strong>Bagus Wicaksono</strong><span>Jakarta Selatan</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Profesional -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <a class="brand" href="#home" aria-label="LautKecil, beranda"><span class="brand-mark">≈</span><span>Laut<span class="brand-light">Kecil</span></span></a>
+        <p>Toko ikan hias daring terpercaya yang mengutamakan kesehatan ikan, kemasan berstandar oksigen medis, dan pendampingan perawatan bagi setiap pecinta akuarium di Indonesia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#koleksi">Katalog Koleksi</a></li>
+          <li><a href="#keunggulan">Keunggulan Layanan</a></li>
+          <li><a href="#panduan">Panduan Aklimatisasi</a></li>
+          <li><a href="#testimoni">Testimoni Pelanggan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan & Kontak</h4>
+        <ul>
+          <li>Email: <a href="mailto:halo@lautkecil.id">halo@lautkecil.id</a></li>
+          <li>Pengiriman: Seluruh Indonesia</li>
+          <li>Jam Operasional: 08:00 – 21:00 WIB</li>
+          <li>Garansi: D.O.A 100% Hidup</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Spesifikasi Proyek</h4>
+        <p style="font-size:11px;line-height:1.6;margin:0 0 14px;">Aplikasi web toko e-commerce berbasis <strong>Node.js</strong> murni, database <strong>SQLite</strong>, dan <strong>RESTful API</strong>.</p>
+        <button type="button" class="dev-badge-button" id="openDevModal">🛠️ Dokumentasi Teknis & API</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LautKecil. Seluruh hak cipta dilindungi.</span>
+      <span style="color:#78867d;">Dibuat untuk Presentasi & Penilaian Proyek Web</span>
+    </div>
+  </footer>
+
+  <!-- Dialog Modal Dokumentasi Teknis & REST API (Untuk Dosen / Penilai Project) -->
+  <dialog id="devModal" class="dev-dialog">
+    <div class="dev-dialog-header">
+      <div>
+        <span class="eyebrow">ARSITEKTUR & DOKUMENTASI PROYEK</span>
+        <h2>Spesifikasi REST API & Database SQLite</h2>
+      </div>
+      <button type="button" class="icon-button" id="closeDevModal" aria-label="Tutup">×</button>
+    </div>
+    <div class="dev-dialog-body">
+      <!-- 1. Dokumentasi REST API -->
+      <h3 class="dev-section-title">1. Dokumentasi RESTful API <span class="dev-badge">HTTP JSON API</span></h3>
+      <p style="font-size:11px;line-height:1.6;color:var(--muted);margin:0 0 12px;">Web ini terintegrasi penuh dengan backend REST API bawaan Node.js tanpa dependensi eksternal. Semua respons menggunakan format standar JSON.</p>
+      <table class="api-table">
+        <thead>
+          <tr>
+            <th>Metode</th>
+            <th>Endpoint URL</th>
+            <th>Keterangan & Parameter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="api-method method-get">GET</span></td>
+            <td><code>/api</code></td>
+            <td>Ringkasan endpoint API dan metadata aplikasi toko.</td>
+          </tr>
+          <tr>
+            <td><span class="api-method method-get">GET</span></td>
+            <td><code>/api/products</code></td>
+            <td>Katalog ikan hias. Mendukung parameter query: <code>?category=</code>, <code>?search=</code>, dan <code>?sort=price-asc|price-desc</code>.</td>
+          </tr>
+          <tr>
+            <td><span class="api-method method-get">GET</span></td>
+            <td><code>/api/products/:id</code></td>
+            <td>Detail satu produk berdasarkan ID unik (contoh: <code>/api/products/betta-koi</code>).</td>
+          </tr>
+          <tr>
+            <td><span class="api-method method-post">POST</span></td>
+            <td><code>/api/orders</code></td>
+            <td>Membuat transaksi pesanan baru. Menyimpan data pelanggan, detail produk, mengurangi stok ikan, dan menerapkan transaksi atomik SQLite (ACID).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 2. Skema Relasional Database -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px;">
+        <h3 class="dev-section-title" style="margin:0;border:0;">2. Skema Database Relasional (SQLite) <span class="dev-badge">node:sqlite</span></h3>
+        <a class="text-link" href="schema.sql" download style="font-size:11px;">Unduh schema.sql ↓</a>
+      </div>
+      <p style="font-size:11px;line-height:1.6;color:var(--muted);margin:8px 0 16px;">Tersimpan otomatis di <code>data/lautkecil.sqlite</code> dengan 4 tabel relasional:</p>
+
+      <div class="schema-relations" aria-label="Relasi tabel database">
+        <article class="schema-table"><div class="schema-table-head"><span>01 / PELANGGAN</span><strong>customers</strong></div><ul><li><code>id</code><span>PK</span></li><li><code>name</code></li><li><code>email</code></li><li><code>address</code></li></ul></article>
+        <article class="schema-table"><div class="schema-table-head"><span>02 / PESANAN</span><strong>orders</strong></div><ul><li><code>id</code><span>PK</span></li><li><code>customer_id</code><span>FK</span></li><li><code>status</code></li><li><code>total</code></li><li><code>created_at</code></li></ul></article>
+        <article class="schema-table"><div class="schema-table-head"><span>03 / DETAIL PESANAN</span><strong>order_items</strong></div><ul><li><code>order_id</code><span>PK · FK</span></li><li><code>product_id</code><span>PK · FK</span></li><li><code>product_name</code></li><li><code>quantity</code></li><li><code>unit_price</code></li><li><code>subtotal</code></li></ul></article>
+        <article class="schema-table"><div class="schema-table-head"><span>04 / KATALOG</span><strong>products</strong></div><ul><li><code>id</code><span>PK</span></li><li><code>name</code></li><li><code>category</code></li><li><code>price</code></li><li><code>stock</code></li><li><code>badge</code></li><li><code>description</code></li><li><code>image</code></li></ul></article>
+      </div>
+      <div class="schema-keys" style="padding:12px 0 14px;"><span><b>PK</b> Primary key</span><span><b>FK</b> Foreign key</span><span><b>1 → N</b> Satu ke banyak</span><span>customers → orders · orders → order_items · products → order_items</span></div>
+
+      <div class="schema-code-panel">
+        <div class="schema-code-head"><div><span class="schema-dots" aria-hidden="true"><i></i><i></i><i></i></span><strong>schema.sql</strong><span class="schema-language">SQLITE DDL</span></div><button class="schema-copy" id="copySchema" type="button">Salin SQL</button></div>
+        <pre><code id="sqlSchemaCode">PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS products (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  category TEXT NOT NULL,
+  price INTEGER NOT NULL CHECK (price >= 0),
+  stock INTEGER NOT NULL DEFAULT 0 CHECK (stock >= 0),
+  badge TEXT NOT NULL,
+  description TEXT NOT NULL,
+  image TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS customers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL CHECK (length(trim(name)) >= 2),
+  email TEXT NOT NULL COLLATE NOCASE UNIQUE,
+  address TEXT NOT NULL CHECK (length(trim(address)) >= 8)
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+  id TEXT PRIMARY KEY,
+  customer_id INTEGER NOT NULL,
+  status TEXT NOT NULL DEFAULT 'menunggu konfirmasi',
+  total INTEGER NOT NULL DEFAULT 0 CHECK (total >= 0),
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (customer_id) REFERENCES customers(id) ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS order_items (
+  order_id TEXT NOT NULL,
+  product_id TEXT NOT NULL,
+  product_name TEXT NOT NULL,
+  quantity INTEGER NOT NULL CHECK (quantity > 0),
+  unit_price INTEGER NOT NULL CHECK (unit_price >= 0),
+  subtotal INTEGER NOT NULL CHECK (subtotal = unit_price * quantity),
+  PRIMARY KEY (order_id, product_id),
+  FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE RESTRICT
+);
+
+CREATE INDEX IF NOT EXISTS idx_orders_customer_created
+  ON orders (customer_id, created_at);
+
+CREATE INDEX IF NOT EXISTS idx_order_items_product
+  ON order_items (product_id);</code></pre>
+      </div>
+    </div>
+  </dialog>
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">PILIHANMU</span><h2>Keranjang</h2></div><button class="icon-button" id="closeCart" aria-label="Tutup keranjang">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">Rp0</strong></div><button class="button button-dark checkout-button" id="checkoutButton">Lanjut pesan <span>→</span></button><small>Biaya pengiriman dikonfirmasi setelah pesanan dibuat.</small></div></aside>
+  <dialog id="orderDialog"><form id="orderForm"><button type="button" class="icon-button dialog-close" id="closeDialog" aria-label="Tutup">×</button><span class="eyebrow">SATU LANGKAH LAGI</span><h2>Ke mana si kecil akan pergi?</h2><p>Isi detail penerima. Tim kami akan menghubungimu untuk mengatur pengiriman ikan dengan aman.</p><label>Nama penerima<input name="customerName" required minlength="2" placeholder="Nama lengkap"></label><label>Email<input name="email" type="email" required placeholder="nama@email.com"></label><label>Alamat pengiriman<textarea name="address" required minlength="8" rows="3" placeholder="Alamat lengkap, kota, dan kode pos"></textarea></label><button class="button button-dark" type="submit">Buat pesanan <span>→</span></button></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
