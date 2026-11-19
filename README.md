@@ -1,3 +1,8 @@
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 # 🐠 LautKecil — E-Commerce Ikan Hias & REST API
 
 Website toko online ikan hias modern dengan antarmuka profesional, sistem keranjang belanja interaktif, validasi pesanan, backend **RESTful API**, dan basis data relasional **SQLite** (`node:sqlite`). Dibangun murni tanpa *framework heavy* eksternal untuk performa instan dan arsitektur yang bersih.
